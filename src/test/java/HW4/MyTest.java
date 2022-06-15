@@ -21,7 +21,7 @@ public class MyTest extends AbstractTest {
                 .response()
                 .body()
                 .as(PostResponse.class);
-        assertThat(response.getCuisine(), containsString("Mediterranean"));
+        assertThat(response.getCuisine(), containsString("Italian"));
 
 
 
@@ -37,7 +37,7 @@ public class MyTest extends AbstractTest {
                 .response()
                 .body()
                 .as(PostResponse.class);
-        assertThat(response.getCuisine(), containsString("Mediterranean"));
+        assertThat(response.getCuisine(), containsString("Italian"));
 
     }
 
@@ -52,7 +52,7 @@ public class MyTest extends AbstractTest {
                 .response()
                 .body()
                 .as(PostResponse.class);
-        assertThat(response.getCuisine(), containsString("European"));
+        assertThat(response.getCuisine(), containsString("German"));
 
     }
 
@@ -67,7 +67,7 @@ public class MyTest extends AbstractTest {
                 .response()
                 .body()
                 .as(PostResponse.class);
-        assertThat(response.getCuisine(), containsString("European"));
+        assertThat(response.getCuisine(), containsString("Irish"));
 
     }
 
